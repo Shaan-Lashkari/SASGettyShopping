@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    
+    
+   
+    <title>SAS Getty Shopping</title>
+    <link rel="icon" href="SAS Getty Shopping.png" type="image/gif" sizes="9x9">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="style.css" rel="stylesheet" />
+    
+   
+
+</head>
+<body>
+
+    <nav class="navbar-inverse">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MyNavBar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand a" href="/Rent/Membership.html">SAS Getty Shopping</a>
+        </div>
+        <div class="collapse navbar-collapse" id="MyNavBar">
+            <ul class="nav navbar-nav">
+                <!--
+
+                gsydgysdygs-->
+                <li><a href="home.html" class="a">&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a href="Membership.html" class="a">&nbsp;&nbsp;&nbsp;MemberShip&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a href="Game.html" class="a">&nbsp;&nbsp;&nbsp;Favorite Game&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a href="books.html" class="a">&nbsp;&nbsp;&nbsp;Books&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a href="contact.html" class="a">&nbsp;&nbsp;&nbsp;Contact&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a href="Membership.html" class="a">&nbsp;&nbsp;&nbsp;Add Membership&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a href="chat.html" class="a">&nbsp;&nbsp;&nbsp;Help&nbsp;&nbsp;&nbsp;</a></li>
+                <a><img src="https://img.icons8.com/android/30/000000/shopping-cart.png" style="width:30px;float:right;margin-right:70px;margin-top:10px;" /></a>
+
+
+
+            </ul>
+
+
+        </div>
+
+
+    </nav>
+    <div class="jumbotron " id="hi">
+        SAS Getty Shopping Support Team
+        <br />
+        <div class="message_ai">Hi</div>
+        <div class="message_ai">This is your Assistant David</div>
+        <div class="message_ai">Any questions???</div>
+        <div class="message_ai">Ask in the input below</div>
+        <div class="message_ai">Artificial intelligence will tell you the answer</div>
+
+
+    </div>
+    <div class="jumbotron"><input type="text" id="question" placeholder="Your Question"><button onclick="send_function_test();" class="btn btn-success">Send</button></div>
+    <div id="add" style="display:none;">
+        <small class="text-success">Thank You ! You are inside the Terms , Policy and Privacy of this website. Now you are safe and secure</small>
+    </div>
+
+    <h4 id="rem">
+        Do you accept the <a href="https://policies.google.com/privacy">Terms and Policy </a> of this website?
+        <button class="btn btn-link" onclick="remove_function();">I accept</button></a>
+
+        <button class="btn btn-link" onclick="confirm('Are you sure?'); open_new_window(); ">I don't accept</button>
+        <script>
+            function open_new_window() {
+                var myWindow = window.open("/Rent/permission.html", "Permission Window", "width=700,height=1000");
+
+            }
+            function remove_function() {
+
+                document.getElementById("rem").innerHTML = "";
+                setTimeout(function () {
+                    document.getElementById("add").style.display = "block";
+                }, 2000);
+            }
+        </script>
+    </h4>
+
+    <script src="chat.js"></script>
+</body>
+</html>

@@ -1,0 +1,431 @@
+﻿
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <title>SAS Getty Shopping</title>
+        <link rel="icon" href="SAS Getty Shopping.png" type="image/gif" sizes="9x9">
+        <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link href="style.css" rel="stylesheet" />
+
+    </head>
+    <body style="text-align:center">
+
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+
+            #UserID {
+                color: white
+            }
+
+            .navbar-toggle {
+                width: 40px !important;
+            }
+        </style>
+        <nav class="navbar-inverse">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MyNavBar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand a" href="/Rent/Membership.html">SAS Getty Shopping</a>
+            </div>
+            <div class="collapse navbar-collapse" id="MyNavBar">
+                <ul class="nav navbar-nav">
+                    <!--
+
+                gsydgysdygs-->
+                    <li><a href="home.html" class="a">&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;</a></li>
+                    <li><a href="Membership.html" class="a">&nbsp;&nbsp;&nbsp;MemberShip&nbsp;&nbsp;&nbsp;</a></li>
+                    <li><a href="Game.html" class="a">&nbsp;&nbsp;&nbsp;Favorite Game&nbsp;&nbsp;&nbsp;</a></li>
+                    <li><a href="books.html" class="a">&nbsp;&nbsp;&nbsp;Books&nbsp;&nbsp;&nbsp;</a></li>
+                    <li><a href="contact.html" class="a">&nbsp;&nbsp;&nbsp;Contact&nbsp;&nbsp;&nbsp;</a></li>
+                    <li><a href="Membership.html" class="a">&nbsp;&nbsp;&nbsp;Add Membership&nbsp;&nbsp;&nbsp;</a></li>
+                    <li><a href="chat.html" class="a">&nbsp;&nbsp;&nbsp;Help&nbsp;&nbsp;&nbsp;</a></li>
+                    <a href="add_to_cart.html"><img src="https://img.icons8.com/android/30/000000/shopping-cart.png" style="width:30px;float:right;margin-right:70px;margin-top:10px;" /><sap>0</sap></a>
+
+                   
+
+                </ul>
+
+
+            </div>
+         
+
+        </nav>
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+        <div id="Home">
+
+            <img src="og-image.jpg" alt="Alternate Text" width="100%" />
+        </div>
+        <div class="card">
+            <div class="card-body">
+                PLAY.LEARN.RETURN
+            </div>
+        </div>
+
+        <!--
+    .Geronimo Stilton
+    .Elon Musk
+    .Dog Man
+    .Roald Dahl
+    .Tom Gates
+    .Diary of a Wimpy Kid <sha></sha>
+    .The Advventure of Mooli
+    .R.K. Narayan
+    .OXFORD STUDENT ATLAS FOR INDIA
+    .DK
+    .Scratch book
+    -->
+        <h1></h1>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        </div>
+        <h1 class="text-left">FAQ's</h1>
+        <div class="">
+            <a href="#FAQs" class="btn btn-primary" data-toggle="collapse" style="width:80%;margin:10px;"><h4 style="float:left">FAQ's</h4><h4 style="float:right" class="glyphicon glyphicon-arrow-down"></h4></a>
+            <div class="collapse" id="FAQs">
+                <h6>Q1. Why is this website giving age 5+ ?</h6>
+                Very simple. We recommend age for 5+ because we don't want children to play with toys above 5+ their mental skills are not deloloped for that.
+                <h6>Q2. But you can give toys below 5?</h6>
+                No, we don't have toys for below 5 . We will try to recommend that.
+                <h6>Any other questions???</h6>
+                <input type="text" class="form-control" id="question" />
+                <small>If you have questions regarding to this website, please write down here</small>
+                <br />
+                <small class="text-danger">Please take Membership before posting your question </small>
+                <br />
+                <button class="btn btn-primary" onclick="add_question()">Submit!</button>
+            </div>
+            <a href="#offer" class="btn btn-warning" data-toggle="collapse" style="width:80%; margin:10px;"><h4 style="float:left">Offers</h4><h4 style="float:right" class="glyphicon glyphicon-arrow-down"></h4></a>
+            <div class="container img-thumbnail collapse" id="offer">
+                <h1 style="font-family:cursive">Offers</h1>
+                <small class="text-left text-success" style="font-family:cursive">HUGE SALE</small>
+                <img src="Offer.png" alt="Alternate Text" width="100%" />
+            </div>
+        </div>
+
+
+        <div class="spinner-border"></div>
+        <br />
+        <div style="border:4px solid black"></div>
+        <div class="container-left">
+
+        </div>
+
+
+        <hr />
+
+
+
+        <a href="roald_dhal.html">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="border: 0.8px solid black;border-radius: 5px;height:300px;">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.NgJAIGq26pJMOvi_TV0jzAHaEf&pid=Api&P=0&w=267&h=162" alt="" />
+                <br />
+                <br />
+                <br />
+                <br />
+                Roald Dhal Books
+            </div>
+        </a>
+        <a>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 " style="border: 0.8px solid black;border-radius: 5px;height:300px;">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.ltDuQdjbW6mc7UVwLYkmGQAAAA&pid=Api&P=0&w=236&h=164" alt="Alternate Text" />
+                <br />
+                <br />
+                <br />
+                <br />
+                Geronimo Stilton
+            </div>
+        </a>
+        <a>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="border: 0.8px solid black;border-radius: 5px;height:300px;">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.erVeBI1KKKMbs6cxQsJp3AHaFD&pid=Api&P=0&w=224&h=154" alt="Alternate Text" />
+                <br />
+                <br />
+                <br />
+                <br />
+                D K
+
+
+            </div>
+        </a>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 book" data-toggle="modal" data-target="#Elevator">
+            <img src="BachchaSaveImage14.jpg" class="img-responsive col-lg-6 col-md-6 col-sm-6 col-xs-6" />
+            <br />
+            <hr />
+            <br />
+            <p class="text-primary">Roald Dhal |  Great Glass Elevator </p>
+
+        </div>
+        <div class="modal fade" id="Elevator">
+            <br />
+            <br />
+            <br />
+            <br />
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="BachchaSaveImage14.jpg" class="img-responsive img_modal" />
+                        <p class="p_modal">
+                            Phizzwhizzing new cover look and branding for the World's NUMBER ONE Storyteller! WHOOSH! Inside the Great Glass Elevator, Willy Wonka, Charlie Bucket and his family are cruising a thousand feet above the chocolate factory. They can see the whole world below them, but they're not alone. The American Space Hotel has just launched. Lurking inside are the Vernicious Knids - the most brutal, vindictive murderous beasts in the universe. So grab your gizzard! Hold your hats! Only Charlie and Willy Wonka can stop the Knids from destroying everything! Listen to CHARLIE AND THE GREAT GLASS ELEVATOR and other Roald Dahl audiobooks read by some very famous voices, including Kate Winslet, David Walliams and Steven Fry - plus there are added squelchy soundeffects from Pinewood Studios! Look out for new Roald Dahl apps in the App store and Google Play- including the disgusting TWIT OR MISS! and HOUSE OF TWITS inspired by the revolting Twits.
+                        </p>
+                        <br />
+                        <h4><a href="https://www.amazon.in/First-Space-Encyclopaedia-DK/dp/0241293421/ref=sr_1_1_sspa?crid=3CR2R6U03YGQR&dchild=1&keywords=first+space+encyclopedia&qid=1590637424&sprefix=First+spac%2Caps%2C259&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExS0ZGS1lGRVc2WUhaJmVuY3J5cHRlZElkPUEwNzY1MTU0UUhYOVQ0VlNNTTBHJmVuY3J5cHRlZEFkSWQ9QTA0OTQxNTQxRlQyUDYyR0ZYUjNKJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==">Purchase it!</a></h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6u col-xs-6 book" data-toggle="modal" data-target="#Jiant_Peach">
+            <img src="BachchaSaveImage5.jpg" class="img-responsive col-lg-6 col-md-6 col-sm-6 col-xs-6" />
+            <br />
+
+            <hr />
+            <br />
+            <p class="text-primary">Roald Dhal |  the Jiant Peach </p>
+
+        </div>
+        <div class="modal fade" id="Jiant_Peach">
+            <br />
+            <br />
+            <br />
+            <br />
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="BachchaSaveImage5.jpg" class="img-responsive img_modal" />
+                        <p class="p_modal">
+                            Phizzwhizzing new cover look and branding for the World's NUMBER ONE Storyteller! James Henry Trotter lives with two ghastly hags. Aunt Sponge is enormously fat with a face that looks boiled and Aunt Spiker is bony and screeching. He's very lonely until one day something peculiar happens. At the end of the garden a peach starts to grow and GROW AND GROW. Inside that peach are seven very unusual insects - all waiting to take James on a magical adventure. But where will they go in their GIANT PEACH and what will happen to the horrible aunts if they stand in their way? There's only one way to find out . . "A true genius . . . Roald Dahl is my hero" - David Walliams Now you can listen to James and the Giant Peach and other Roald Dahl AUDIOBOOKS read by some very famous voices, including Kate Winslet, David Walliams and Steven Fry - plus there are added squelchy soundeffects from Pinewood Studios! Also look out for new Roald Dahl apps in the App store and Google Play- including the disgusting TWIT OR MISS! and HOUSE OF TWITS inspired by the revolting Twits.
+                        </p>
+                        <br />
+                        <h4><a href="https://www.amazon.in/First-Space-Encyclopaedia-DK/dp/0241293421/ref=sr_1_1_sspa?crid=3CR2R6U03YGQR&dchild=1&keywords=first+space+encyclopedia&qid=1590637424&sprefix=First+spac%2Caps%2C259&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExS0ZGS1lGRVc2WUhaJmVuY3J5cHRlZElkPUEwNzY1MTU0UUhYOVQ0VlNNTTBHJmVuY3J5cHRlZEFkSWQ9QTA0OTQxNTQxRlQyUDYyR0ZYUjNKJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==">Purchase it!</a></h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 book" data-toggle="modal" data-target="#Matilda">
+            <img src="BachchaSaveImage6.jpg" class="img-responsive col-lg-6 col-md-6 col-sm-6 col-xs-" />
+
+            <hr />
+            <p class="text-primary">Roald Dhal | Matilda </p>
+
+        </div>
+        <div class="modal fade" id="Matilda">
+            <br />
+            <br />
+            <br />
+            <br />
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="BachchaSaveImage6.jpg" class="img-responsive img_modal" />
+                        <p class="p_modal">
+                            Matilda Wormwood's father thinks she's a little scab. Matilda's mother spends all afternoon playing bingo. and Matilda's headmistress Miss Trunchbull? Well, she's the worst of all. She is a big bully, who thinks all her pupils are rotten and locks them in the dreaded Chokey. As for Matilda, she's an extraordinary little girl with a magical mind - and now she's had enough. So all these grown-ups had better watch out, because Matilda is going to teach them a lesson they'll never forget.
+
+                        </p>
+                        <br />
+                        <h4><a href="https://www.amazon.in/First-Space-Encyclopaedia-DK/dp/0241293421/ref=sr_1_1_sspa?crid=3CR2R6U03YGQR&dchild=1&keywords=first+space+encyclopedia&qid=1590637424&sprefix=First+spac%2Caps%2C259&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExS0ZGS1lGRVc2WUhaJmVuY3J5cHRlZElkPUEwNzY1MTU0UUhYOVQ0VlNNTTBHJmVuY3J5cHRlZEFkSWQ9QTA0OTQxNTQxRlQyUDYyR0ZYUjNKJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==">Purchase it!</a></h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 book" data-toggle="modal" data-target="#Factory">
+            <img src="BachchaSaveImage15.jpg" class="img-responsive col-lg-6 col-md-6 col-sm-12 col-xs-12" />
+            <hr />
+            <br />
+
+            <p class="text-primary">Roald Dhal | Charlie and the chocolate Factory </p>
+
+        </div>
+        <div class="modal fade" id="Factory">
+            <br />
+            <br />
+            <br />
+            <br />
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="BachchaSaveImage15.jpg" class="img-responsive img_modal" />
+                        <p class="p_modal">
+                            Phizzwhizzing new cover look and branding for the World's NUMBER ONE Storyteller! Mr Willy Wonka is the most extraordinary chocolate maker in the world. And do you know who Charlie is? Charlie Bucket is the hero. The other children in this book are nasty little beasts, called: Augustus Gloop - a great big greedy nincompoop; Veruca Salt - a spoiled brat; Violet Beauregarde - a repulsive little gum-chewer; Mike Teavee - a boy who only watches television. Clutching their Golden Tickets, they arrive at Wonka's chocolate factory. But what mysterious secrets will they discover? Our tour is about to begin. Please don't wander off. Mr Wonka wouldn't like to lose any of you at this stage of the proceedings . . . 'The ultimate children's story ever' - David Walliams Now you can listen to CHARLIE AND THE CHOCOLATE FACTORY and other Roald Dahl audiobooks read by some very famous voices, including Kate Winslet, David Walliams and Steven Fry - plus there are added squelchy soundeffects from Pinewood Studios! Look out for new Roald Dahl apps in the App store and Google Play- including the disgusting TWIT OR MISS! and HOUSE OF TWITS inspired by the revolting Twits.
+                        </p>
+                        <br />
+                        <h4><a href="https://www.amazon.in/First-Space-Encyclopaedia-DK/dp/0241293421/ref=sr_1_1_sspa?crid=3CR2R6U03YGQR&dchild=1&keywords=first+space+encyclopedia&qid=1590637424&sprefix=First+spac%2Caps%2C259&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExS0ZGS1lGRVc2WUhaJmVuY3J5cHRlZElkPUEwNzY1MTU0UUhYOVQ0VlNNTTBHJmVuY3J5cHRlZEFkSWQ9QTA0OTQxNTQxRlQyUDYyR0ZYUjNKJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==">Purchase it!</a></h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="img-thumbnail">
+            <img src="ShaanLahkari.jpg.jpg" style="border-radius:100px;height:200px;" />
+            <h1>CEO , Founder at SAS Getty Shopping</h1>
+            <small><b>Name : </b> Shaan Lashkari</small>
+            <br />
+            <small><b>Age : </b>9</small>
+            <br />
+            <small><b>Proffession : </b> Coding/Programming</small>
+            <br />
+            <small><b>Avalaible : </b>12x24x5</small>
+            <br />
+            <small><b>Email : </b>shaan.lashkari@gmail.com</small>
+            <br />
+            <small><b> Phone : </b> --</small>
+            <br />
+            <small><b>Address : </b> -</small>
+
+        </div>
+        <div class="img-thumbnail">
+            <img src="Aarit.jpg" style="border-radius:100px;height:200px;" />
+            <h1>Co - Founder, Partner at SAS Getty Shopping</h1>
+            <small><b>Name : </b> Aarit Rastogi</small>
+            <br />
+            <small><b>Age : </b>9</small>
+            <br />
+            <small><b>Proffession : </b> Coding/</small>
+            <br />
+            <small><b>Avalaible : </b>Can't Tell</small>
+            <br />
+            <small><b>Email : </b>rastogi.aarit@gmail.com</small>
+            <br />
+            <small><b> Phone : </b> --</small>
+            <br />
+            <small><b>Address : </b> -</small>
+
+        </div>
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <h4 id="rem">
+            Do you accept the <a href="https://policies.google.com/privacy">Terms and Policy </a> of this website?
+            <button class="btn btn-link" onclick="remove_function();">I accept</button></a>
+
+            <button class="btn btn-link" onclick="confirm('Are you sure?'); open_new_window(); ">I don't accept</button>
+            <script>
+                function open_new_window() {
+                    var myWindow = window.open("/Rent/permission.html", "Permission Window", "width=700,height=1000");
+
+                }
+                function remove_function() {
+
+                    document.getElementById("rem").innerHTML = "";
+                    setTimeout(function () {
+                        document.getElementById("add").style.display = "block";
+                    }, 2000);
+                }
+            </script>
+        </h4>
+        <hr style="background-color:grey;" />
+        <div class="footer">
+            <h4>The End</h4>
+            <small><a href="/Rent/Membership.html">Take Membership</a></small>
+            <br />
+            <a href="/Rent/books.html">See Books</a>
+            <br />
+            <a href="/Rent/contact.html">Contact Us</a>
+            <br />
+            <a href="/Rent/Game.html">Board Games</a>
+            <br />
+            <h4>All Rights Reserved &copy;</h4>
+            <a href="mailto:sas.getty.shopping.team?Subject:Some Complaint">If you have any complaint regarding to this website, please let me know</a>
+
+        </div>
+        <script src="home.js"></script>
+    </body>
+</html>

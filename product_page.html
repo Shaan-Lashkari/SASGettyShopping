@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <title>SAS Getty Shopping</title>
+    <link rel="icon" href="SAS Getty Shopping.png" type="image/gif" sizes="9x9">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+
+    
+</head>
+<body>
+    <style>
+
+        .footer {
+            color: white;
+            background-color: #222;
+            text-align: center;
+            width: 100%;
+            z-index: 10000;
+        }
+    </style>
+    <style>
+        .navbar-inverse {
+            position: sticky;
+            top: 0;
+            z-index: 9999;
+        }
+    </style>
+    <style>
+        .navbar-inverse {
+            position: sticky;
+            top: 0;
+            z-index: 9999;
+        }
+
+        .link {
+            color: black;
+        }
+
+        .a:hover {
+            font-size: 40px;
+        }
+
+        .a:not(:hover) {
+            font-size: 16px;
+        }
+
+        .row {
+            background-color: #010751;
+            height: 200px;
+            width: 102%;
+            color: white;
+        }
+
+        .img-thumbnail {
+            width: 102%;
+        }
+
+        .bold {
+            font-weight: bolder;
+        }
+
+        .color-white {
+            color: white;
+        }
+
+        .product {
+            border: 0.8px solid black;
+            border-radius: 5px;
+        }
+
+        .rad {
+            float: left;
+            background-color: #222;
+            height: 720px;
+            width: 10%;
+            color: white;
+        }
+
+        kas {
+            color: green;
+            font-family: cursive;
+        }
+         .btn-link {
+            width: 120px;
+            border: 0.5px solid black;
+        }
+    </style>
+    <nav class="navbar-inverse">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MyNavBar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand a" href="/Rent/books.html">SAS Getty Shopping</a>
+        </div>
+        <div class="collapse navbar-collapse" id="MyNavBar">
+            <ul class="nav navbar-nav">
+                <!--
+
+                gsydgysdygs-->
+                <li><a href="home.html" class="a">|&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;|</a></li>
+                <li><a href="Membership.html" class="a">|&nbsp;&nbsp;&nbsp;MemberShip&nbsp;&nbsp;&nbsp;|</a></li>
+                <li><a href="Game.html" class="a">|&nbsp;&nbsp;&nbsp;Favorite Game&nbsp;&nbsp;&nbsp;|</a></li>
+                <li><a href="books.html" class="a">|&nbsp;&nbsp;&nbsp;Books&nbsp;&nbsp;&nbsp;|</a></li>
+                <li><a href="contact.html" class="a">|&nbsp;&nbsp;&nbsp;Contact&nbsp;&nbsp;&nbsp;|</a></li>
+                <li><a href="Membership.html" class="a">|&nbsp;&nbsp;&nbsp;Add Membership&nbsp;&nbsp;&nbsp;|</a></li>
+                <li><a href="chat.html" class="a">|&nbsp;&nbsp;&nbsp;Help&nbsp;&nbsp;&nbsp;|</a></li>
+            </ul>
+
+        </div>
+        <input type="text" class="form-control" placeholder="Search Something" id="search" />&nbsp;
+        <button class="btn btn-warning" onclick="search();">Search</button> <small class="color-white">Search powered by <b class="bold"><b>SAS GETTY SHOPPING</b></b> </small>
+    </nav>
+    <!--Start Code-->
+    <h4 id="Product_name"></h4>
+    <h4 id="rem">
+        Do you accept the <a href="https://policies.google.com/privacy">Terms and Policy </a> of this website?
+        <button class="btn btn-link" onclick="remove_function();">I accept</button></a>
+
+        <button class="btn btn-link" onclick="confirm('Are you sure?'); open_new_window(); ">I don't accept</button>
+        <script>
+            function open_new_window() {
+                var myWindow = window.open("/Rent/permission.html", "Permission Window", "width=700,height=1000");
+
+            }
+            function remove_function() {
+
+                document.getElementById("rem").innerHTML = "";
+                setTimeout(function () {
+                    document.getElementById("add").style.display = "block";
+                }, 2000);
+            }
+        </script>
+    </h4>
+    <!--End Code-->
+    <script src="product_page.js"></script>
+</body>
+</html>
