@@ -6,7 +6,7 @@ speak_data = "Hi. This is your Assistant David  . Any Questions??? . Ask in the 
 var arrQuestionHi = ["hi",  "hello"];
 var arrQuestionFine = ["fine", "great"];
 var arrQuestionRentBooks = ["rent books" , "rent a book"];
-
+var arrShlokNegi = ['Shlok Negi', 'shlok negi']
 
 var mutterThis = new SpeechSynthesisUtterance(speak_data);
 
@@ -123,6 +123,24 @@ function send_function_test() {
             var utterThis = new SpeechSynthesisUtterance(speak_data);
 
             synth.speak(utterThis);
+        }
+        else if (arrShlokNegi.includes(questionInput.toLowerCase())) {
+
+
+
+
+
+            var synth = window.speechSynthesis;
+
+            speak_data = "Shlok Negi is the business partner in the company es a es Getty Shopping";
+
+            document.getElementById("hi").innerHTML += "<div class='message_ai'>Shlok Negi is the business partner in the company es a es Getty Shopping</div>";
+
+            var utterThis = new SpeechSynthesisUtterance(speak_data);
+
+            synth.speak(utterThis);
+
+
         }
         else  {
 
